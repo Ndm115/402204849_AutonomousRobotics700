@@ -1,0 +1,37 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
+  position 0 0 10
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+E-puck {
+  translation -0.25 0.2 0
+  name "ROBOT_1"
+  controller "component_b_ml_navigation"
+  supervisor TRUE
+}
+E-puck {
+  translation 0.25 0.2 0
+  name "ROBOT_2"
+  controller "component_b_ml_navigation"
+  supervisor TRUE
+}
+E-puck {
+  translation 0 -0.25 0
+  name "ROBOT_3"
+  controller "component_b_ml_navigation"
+  supervisor TRUE
+}
