@@ -97,11 +97,7 @@ while robot.step(timestep) != -1:
 
     derivative = error - previous_error
 
-    correction = (
-        Kp * error
-        + Ki * integral
-        + Kd * derivative
-    )
+    correction = (Kp * error + Ki * integral + Kd * derivative)
 
     previous_error = error
 
